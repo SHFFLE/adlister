@@ -8,7 +8,7 @@
 <body>
 <main>
     <div id="content">
-        Successful login!
+        <h1>Welcome!</h1>
     </div>
 </main>
 </body>
