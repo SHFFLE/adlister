@@ -1,0 +1,172 @@
+nav {
+    font-family: "Microsoft Sans Serif", sans-serif, monospace;
+    height: 100%;
+    background-color: rgb(2, 21, 49);
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    text-indent: 8px;
+    font-size: 1.5em;
+    z-index: 100;
+}
+nav ul {
+    width: 200px;
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    padding-bottom: 2.5px;
+    padding-top: 2.5px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+nav li:hover {
+    background-color: rgb(18, 123, 160);
+}
+nav .active {
+    background-color: rgb(21, 61, 105);
+}
+nav .header {
+    background-color: rgb(49, 31, 78);
+    font-size: 1.2em;
+    border-bottom: solid 2px lightslategrey;
+}
+nav .list-link{
+    display: block;
+}
+nav .header:hover {
+    background-color: rgb(49, 31, 78);
+}
+nav .list-submenu-header{
+    font-size: 1.2em;
+    border-top: solid 2px lightslategrey;
+    border-bottom: solid 2px lightslategrey;
+    display: block;
+}
+nav .list-submenu {
+    position: relative;
+    background-color: rgb(21, 3, 51);
+    display: none;
+    top: -42px;
+    margin-left: 200px;
+    border: solid 1px lightslategrey;
+}
+.hamburger {
+    display: none;
+}
+main {
+    margin-left: 200px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: calc(100% - 200px);
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+@media only screen and (max-device-width : 480px){
+    nav {
+        font-family: "Microsoft Sans Serif", sans-serif, monospace;
+        width: 100%;
+        height: 1.5em;
+        background-color: rgb(2, 21, 49);
+        color: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5em;
+    }
+    #hamburger{
+        position: fixed;
+        left: 90%;
+        top: 10px;
+        z-index: 200;
+    }
+    .hamburger {
+        position: absolute;
+        display: inline-block;
+        width: 1.25em;
+        height: 0.8em;
+
+        border-top: 0.2em solid #fff;
+        border-bottom: 0.2em solid #fff;
+    }
+
+    .hamburger:before {
+        content: "";
+        position: absolute;
+        top: 0.3em;
+        left: 0px;
+        width: 100%;
+        border-top: 0.2em solid #fff;
+    }
+
+
+    nav ul {
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        padding-bottom: 2.5px;
+        padding-top: 2.5px;
+    }
+    nav .list-link {
+        display: none;
+    }
+    nav a {
+        text-decoration: none;
+        color: white;
+        width: 100%;
+    }
+    nav li:hover {
+        background-color: rgb(18, 123, 160);
+    }
+    nav .active {
+        background-color: rgb(21, 61, 105);
+    }
+    nav .header {
+        background-color: rgb(49, 31, 78);
+        font-size: 1.2em;
+        border-bottom: solid 2px lightslategrey;
+        height: 10%;
+    }
+    nav .header:hover {
+        background-color: rgb(49, 31, 78);
+    }
+    nav .list-submenu-header{
+        display: none;
+        font-size: 1.2em;
+        border-top: solid 2px lightslategrey;
+        border-bottom: solid 2px lightslategrey;
+    }
+    nav .list-submenu {
+        position: relative;
+        background-color: rgb(2, 21, 49);
+        display: none;
+        top: 0;
+        margin-left: 0;
+        border: none;
+    }
+    main {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2.5em;
+
+    }
+}
